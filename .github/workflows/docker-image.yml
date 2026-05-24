@@ -34,9 +34,9 @@ jobs:
 
           # ✅ 语义化多标签策略
           tags: |
-            lcyz/redroid-rk3588-nogapps:latest
-            lcyz/redroid-rk3588-nogapps:v1.1
-            lcyz/redroid-rk3588-nogapps:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/redroid-rk3588-nogapps:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/redroid-rk3588-nogapps:v1.1
+            ${{ secrets.DOCKERHUB_USERNAME }}/redroid-rk3588-nogapps:${{ github.sha }}
 
           # ✅ 构建优化（禁用不必要的 metadata 声明，加快构建）
           provenance: false
